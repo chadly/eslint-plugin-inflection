@@ -1,6 +1,8 @@
 import inflector from "inflected";
+import _words from "lodash.words";
 
 export function isPlural(val) {
+	val = val.toLowerCase();
 	const parsed = parse(val);
 
 	if (parsed.single === parsed.plural) {
@@ -11,6 +13,7 @@ export function isPlural(val) {
 }
 
 export function isSingular(val) {
+	val = val.toLowerCase();
 	const parsed = parse(val);
 
 	if (parsed.single === parsed.plural) {
@@ -20,9 +23,14 @@ export function isSingular(val) {
 	return parsed.plural != val;
 }
 
+export function getWord(val) {
+	const words = _words(val);
+	return words[words.length - 1];
+}
+
 function parse(val) {
 	return {
-		plural: inflector.pluralize(val),
-		singular: inflector.singularize(val)
+		plural: inflector.pluralize(val).toLowerCase(),
+		singular: inflector.singularize(val).toLowerCase()
 	};
 }

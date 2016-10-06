@@ -27,7 +27,8 @@
     "singular"
   ],
   "dependencies": {
-    "inflected": "1.x"
+    "inflected": "1.x",
+    "lodash.words": "4.x"
   },
   "peerDependencies": {
     "eslint": ">=3"

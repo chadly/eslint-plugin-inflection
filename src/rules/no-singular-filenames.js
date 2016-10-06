@@ -1,5 +1,5 @@
 import path from "path";
-import { isSingular } from "../inflection";
+import { getWord, isSingular } from "../inflection";
 
 module.exports = {
 	create: function(context) {
@@ -8,8 +8,9 @@ module.exports = {
 				const filename = context.getFilename();
 				const ext = path.extname(filename);
 				const name = path.basename(filename, ext);
+				const word = getWord(name);
 
-				if (isSingular(name)) {
+				if (isSingular(word)) {
 					context.report(node, "Filename '{{name}}' is singular where singular filenames are not allowed.", {
 						name: `${name}${ext}`
 					});
