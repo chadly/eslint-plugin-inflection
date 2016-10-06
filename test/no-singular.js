@@ -17,10 +17,6 @@ tester.run("no-singular-filenames", rule, {
 		filename: "bus.js",
 		errors: [message("bus.js")]
 	}, {
-		code: "lens.js",
-		filename: "lens.js",
-		errors: [message("lens.js")]
-	}, {
 		code: "octopus.js",
 		filename: "octopus.js",
 		errors: [message("octopus.js")]
@@ -52,9 +48,6 @@ tester.run("no-singular-filenames", rule, {
 	}, {
 		code: "newses.js", // I know this isn't a word
 		filename: "newses.js"
-	}, {
-		code: "lenses.js",
-		filename: "lenses.js"
 	}, {
 		code: "octopuses.js", // I know this isn't a word
 		filename: "octopuses.js"

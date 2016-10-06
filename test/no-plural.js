@@ -17,10 +17,6 @@ tester.run("no-plural-filenames", rule, {
 		code: "news.js",
 		filename: "news.js"
 	}, {
-		code: "lens.js",
-		filename: "lens.js",
-		errors: [message("lens.js")]
-	}, {
 		code: "octopus.js",
 		filename: "octopus.js"
 	}, {
@@ -52,10 +48,6 @@ tester.run("no-plural-filenames", rule, {
 		code: "newses.js", // I know this isn't a word
 		filename: "newses.js",
 		errors: [message("newses.js")]
-	}, {
-		code: "lenses.js",
-		filename: "lenses.js",
-		errors: [message("lenses.js")]
 	}, {
 		code: "octopuses.js", // I know this isn't a word
 		filename: "octopuses.js",
