@@ -35,7 +35,7 @@ rules:
 It does what is sounds like it should do. With the `no-plural-filenames` rule enabled, these would be valid filenames:
 
 * `bus.js`
-* `lens.js`
+* `octopus.js`
 * `woman.js`
 * `here-is-the-woman.js`
 * `HERE_IS_THE_WOMAN.JS`
@@ -44,7 +44,7 @@ It does what is sounds like it should do. With the `no-plural-filenames` rule en
 while these would be invalid:
 
 * `buses.js`
-* `lenses.js`
+* `octopi.js`
 * `women.js`
 * `here-are-the-women.js`
 * `HERE_ARE_THE_WOMEN.JS`
