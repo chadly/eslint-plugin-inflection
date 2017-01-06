@@ -1,5 +1,5 @@
 import inflector from "inflected";
-import _words from "lodash.words";
+import { words as _words } from "lodash";
 
 export function isPlural(val) {
 	val = val.toLowerCase();
